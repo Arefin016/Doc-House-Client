@@ -64,6 +64,7 @@ const NavBar = () => {
           </ul>
         </div>
         <svg
+          className="ml-10"
           xmlns="http://www.w3.org/2000/svg"
           width="62"
           height="62"
@@ -91,7 +92,7 @@ const NavBar = () => {
           <span className="text-4xl font-bold text-[#FFF]">House</span>
         </p>
       </div>
-      <div className="navbar-end hidden lg:flex">
+      <div className="navbar-end hidden mr-7 lg:flex">
         <ul className="menu menu-horizontal px-1">{navLinks}</ul>
       </div>
       {/* <div className="navbar-end">
