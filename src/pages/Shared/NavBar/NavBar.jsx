@@ -19,6 +19,16 @@ const NavBar = () => {
         </NavLink>
       </li>
       <li>
+        <NavLink to={"/reviews"} className="text-[#F3F3F3]">
+          Reviews
+        </NavLink>
+      </li>
+      <li>
+        <NavLink to={"/contactUs"} className="text-[#F3F3F3]">
+          Contact Us
+        </NavLink>
+      </li>
+      <li>
         <NavLink to={"/login"} className="text-[#F3F3F3]">
           Login
         </NavLink>
