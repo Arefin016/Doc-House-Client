@@ -1,10 +1,13 @@
 import Banner from "../Banner/Banner"
+import Location from "../Location/Location"
+import OurServices from "../OurServices/OurServices"
 
 const Home = () => {
   return (
     <div>
       <Banner></Banner>
-      <h2>This is home</h2>
+      <OurServices></OurServices>
+      <Location></Location>
     </div>
   )
 }
