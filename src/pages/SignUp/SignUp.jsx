@@ -3,7 +3,7 @@ import signInImg from "../../assets/SignUp/Frame.png"
 import { AuthContext } from "../../providers/AuthProvider"
 import { Link } from "react-router-dom"
 
-const Login = () => {
+const SignUp = () => {
   const { signIn } = useContext(AuthContext)
 
   const handleLogin = (event) => {
@@ -28,20 +28,42 @@ const Login = () => {
         </div>
         <div className="card bg-base-100 border border-[#E6E6E6] w-full max-w-sm shrink-0 shadow-2xl lg:w-1/2">
           <form onSubmit={handleLogin} className="card-body">
-            <h2 className="text-center text-[30px] font-bold lg:my-8">
-              Sign in to Doc House
+            <h2 className="text-center text-[30px] font-bold">
+              Sign Up to Doc House
             </h2>
             <div className="form-control">
               <label className="label">
-                <span className="font-semibold text-[20px]">
-                  Username or Email Address
-                </span>
+                <span className="font-semibold text-[20px]">Name</span>
+              </label>
+              <input
+                type="name"
+                name="name"
+                placeholder="Enter your name"
+                className="input input-bordered bg-[#F3F3F3]"
+                required
+              />
+            </div>
+            <div className="form-control">
+              <label className="label">
+                <span className="font-semibold text-[20px]">PhotoURL</span>
+              </label>
+              <input
+                type="photo"
+                name="photo"
+                placeholder="Enter your PhotoURL"
+                className="input input-bordered bg-[#F3F3F3]"
+                required
+              />
+            </div>
+            <div className="form-control">
+              <label className="label">
+                <span className="font-semibold text-[20px]">Email</span>
               </label>
               <input
                 type="email"
                 name="email"
-                placeholder="Enter your username or address"
-                className="input input-bordered bg-[#F3F3F3] mb-5"
+                placeholder="Enter your email"
+                className="input input-bordered bg-[#F3F3F3]"
                 required
               />
             </div>
@@ -53,7 +75,7 @@ const Login = () => {
                 type="password"
                 name="password"
                 placeholder="Enter your password"
-                className="input input-bordered bg-[#F3F3F3] mb-5"
+                className="input input-bordered bg-[#F3F3F3]"
                 required
               />
               <label className="label">
@@ -69,9 +91,9 @@ const Login = () => {
                 value="Create Account"
               />
               <h2 className="text-center text-[18px] text-[#6C6B6B] font-normal mt-5">
-                Please register at first. Go to{" "}
+                Already registered? Go to{" "}
                 <span className="text-[18px] text-[#F7A582] font-bold">
-                  <Link to={"/signUp"}>SIGN UP</Link>
+                  <Link to={"/login"}> SIGN IN</Link>
                 </span>
               </h2>
             </div>
@@ -82,4 +104,4 @@ const Login = () => {
   )
 }
 
-export default Login
+export default SignUp
