@@ -5,6 +5,7 @@ import {
   onAuthStateChanged,
   signInWithEmailAndPassword,
   signOut,
+  updateProfile,
 } from "firebase/auth"
 import { app } from "../firebase/firebase.config"
 
@@ -33,6 +34,14 @@ const AuthProvider = ({ children }) => {
     return signOut(auth)
   }
 
+  //update user profile
+  const updateUserProfile = (name, photo) => {
+    return updateProfile(auth.currentUser, {
+      displayName: name,
+      photoURL: photo,
+    })
+  }
+
   //current user watching and following who is in the website or who is out of the website
   useEffect(() => {
     const unsubscribe = onAuthStateChanged(auth, (currentUser) => {
@@ -51,6 +60,7 @@ const AuthProvider = ({ children }) => {
     createuser,
     signIn,
     logOut,
+    updateUserProfile,
   }
   return (
     <AuthContext.Provider value={authInfo}>{children}</AuthContext.Provider>

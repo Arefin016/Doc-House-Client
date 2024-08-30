@@ -42,12 +42,14 @@ const NavBar = () => {
 
       {user ? (
         <>
-          <button
-            onClick={handleLogOut}
-            className="btn-ghost text-[#F3F3F3] ml-2"
-          >
-            Logout
-          </button>
+          <div className="lg:tooltip mt-[7px]" data-tip={user?.displayName}>
+            <button
+              onClick={handleLogOut}
+              className="btn-ghost text-[#F3F3F3] ml-2"
+            >
+              Logout
+            </button>
+          </div>
         </>
       ) : (
         <>
