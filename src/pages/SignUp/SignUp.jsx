@@ -1,17 +1,24 @@
 import signInImg from "../../assets/SignUp/Frame.png"
 import { Link } from "react-router-dom"
 import { useForm } from "react-hook-form"
+import { useContext } from "react"
+import { AuthContext } from "../../providers/AuthProvider"
 
 const SignUp = () => {
   const {
     register,
     handleSubmit,
-    watch,
     formState: { errors },
   } = useForm()
 
+  const { createuser } = useContext(AuthContext)
+
   const onSubmit = (data) => {
     console.log(data)
+    createuser(data.email, data.password).then((result) => {
+      const loggedUser = result.user
+      console.log(loggedUser)
+    })
   }
 
   return (
@@ -83,10 +90,27 @@ const SignUp = () => {
                   required: true,
                   maxLength: 20,
                   minLength: 6,
+                  pattern: /(?=.*[A-Z])(?=.*[!@#$&*])(?=.*[0-9])(?=.*[a-z])/,
                 })}
               />
               {errors.password?.type === "required" && (
                 <span className="text-red-600">Password is required</span>
+              )}
+              {errors.password?.type === "minLength" && (
+                <span className="text-red-600">
+                  Password must be 6 characters
+                </span>
+              )}
+              {errors.password?.type === "maxLength" && (
+                <span className="text-red-600">
+                  Password must be less than 20 characters
+                </span>
+              )}
+              {errors.password?.type === "pattern" && (
+                <span className="text-red-600">
+                  Password must have one uppercase, one lowercase, one number
+                  and one special characters
+                </span>
               )}
               <label className="label">
                 <a href="#" className="label-text-alt link link-hover">

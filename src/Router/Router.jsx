@@ -8,6 +8,7 @@ import Reviews from "../pages/Reviews/Reviews"
 import ContactUs from "../pages/ContactUs/ContactUs"
 import ErrorPage from "../pages/ErrorPage/ErrorPage"
 import SignUp from "../pages/SignUp/SignUp"
+import PrivateRoute from "./PrivateRoute"
 
 export const router = createBrowserRouter([
   {
@@ -21,7 +22,11 @@ export const router = createBrowserRouter([
       },
       {
         path: "/about",
-        element: <About></About>,
+        element: (
+          <PrivateRoute>
+            <About></About>
+          </PrivateRoute>
+        ),
       },
       {
         path: "/appointment",
