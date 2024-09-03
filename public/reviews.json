@@ -1,6 +1,5 @@
 [
   {
-    "_id": "1",
     "name": "John Doe",
     "designation": "Software Engineer",
     "image": "https://i.ibb.co/8ssJdky/Rectangle-20075.jpg",
@@ -8,7 +7,6 @@
     "rating": 4
   },
   {
-    "_id": "2",
     "name": "Jane Smith",
     "designation": "Marketing Manager",
     "image": "https://i.ibb.co/8ssJdky/Rectangle-20075.jpg",
@@ -16,7 +14,6 @@
     "rating": 3
   },
   {
-    "_id": "3",
     "name": "Emily Johnson",
     "designation": "Teacher",
     "image": "https://i.ibb.co/8ssJdky/Rectangle-20075.jpg",
@@ -24,7 +21,6 @@
     "rating": 2
   },
   {
-    "_id": "4",
     "name": "Michael Brown",
     "designation": "Project Manager",
     "image": "https://i.ibb.co/8ssJdky/Rectangle-20075.jpg",
@@ -32,7 +28,6 @@
     "rating": 4.9
   },
   {
-    "_id": "5",
     "name": "Sarah Williams",
     "designation": "Graphic Designer",
     "image": "https://i.ibb.co/8ssJdky/Rectangle-20075.jpg",
