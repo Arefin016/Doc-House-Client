@@ -1,0 +1,138 @@
+[
+  {
+    "_id": "1",
+    "name": "Dr. Sarah Evans",
+    "about_me": "Passionate about providing care and making a difference in patients' lives. Specialized in family medicine.",
+    "education": [
+      "MBBS - University of California",
+      "MD - Stanford University"
+    ],
+    "work_experience": [
+      {
+        "position": "Family Physician",
+        "institution": "Green Valley Hospital",
+        "years": "2015-2022"
+      },
+      {
+        "position": "General Practitioner",
+        "institution": "Wellness Clinic",
+        "years": "2022-present"
+      }
+    ],
+    "services": [
+      "General Check-up",
+      "Chronic Disease Management",
+      "Vaccination"
+    ],
+    "specialization": ["Family Medicine", "Preventive Care"],
+    "awards": ["Best Family Physician 2018", "Excellence in Patient Care 2020"],
+    "location": "123 Wellness Street, San Francisco, CA",
+    "reviews": [
+      {
+        "rating": 4.8,
+        "comment": "Dr. Evans is caring and always listens to her patients."
+      }
+    ],
+    "business_hours": {
+      "Monday-Friday": "9:00 AM - 5:00 PM",
+      "Saturday": "9:00 AM - 1:00 PM",
+      "Sunday": "Closed"
+    },
+    "BTP": [
+      "Holistic family care",
+      "Early disease detection through preventive measures",
+      "Long-term chronic disease management"
+    ],
+    "specialist": "Family Medicine",
+    "doctor_pic": "https://i.postimg.cc/sD1gL3qQ/Rectangle-15-1.png"
+  },
+  {
+    "_id": "2",
+    "name": "Dr. Michael Carter",
+    "about_me": "Dedicated to offering the best in orthopedic care with a focus on rehabilitation and sports injuries.",
+    "education": [
+      "MBBS - Harvard Medical School",
+      "Fellowship in Orthopedics - Mayo Clinic"
+    ],
+    "work_experience": [
+      {
+        "position": "Orthopedic Surgeon",
+        "institution": "City Health Center",
+        "years": "2016-2021"
+      },
+      {
+        "position": "Lead Orthopedist",
+        "institution": "National Sports Clinic",
+        "years": "2021-present"
+      }
+    ],
+    "services": [
+      "Joint Replacement",
+      "Sports Injury Treatment",
+      "Fracture Care"
+    ],
+    "specialization": ["Orthopedics", "Rehabilitation"],
+    "awards": ["Top Orthopedic Surgeon 2019", "Healthcare Innovator 2021"],
+    "location": "789 Sports Avenue, Boston, MA",
+    "reviews": [
+      {
+        "rating": 4.7,
+        "comment": "Dr. Carter is a skilled surgeon and a kind person. Highly recommend."
+      }
+    ],
+    "business_hours": {
+      "Monday-Friday": "8:00 AM - 6:00 PM",
+      "Saturday": "9:00 AM - 2:00 PM",
+      "Sunday": "Closed"
+    },
+    "BTP": [
+      "Minimally invasive joint surgeries",
+      "Comprehensive post-injury rehabilitation",
+      "Sports injury prevention and recovery strategies"
+    ],
+    "specialist": "Orthopedics",
+    "doctor_pic": "https://i.postimg.cc/cLw0qCmH/Rectangle-15-2.png"
+  },
+  {
+    "_id": "3",
+    "name": "Dr. Priya Kapoor",
+    "about_me": "A dermatologist passionate about enhancing skin health and treating complex skin conditions.",
+    "education": [
+      "MBBS - King’s College London",
+      "Diploma in Dermatology - University of Manchester"
+    ],
+    "work_experience": [
+      {
+        "position": "Consultant Dermatologist",
+        "institution": "Skin Health Clinic",
+        "years": "2018-present"
+      }
+    ],
+    "services": [
+      "Acne Treatment",
+      "Skin Cancer Screening",
+      "Cosmetic Dermatology"
+    ],
+    "specialization": ["Dermatology", "Cosmetic Treatments"],
+    "awards": ["Dermatologist of the Year 2022"],
+    "location": "456 SkinCare Road, London, UK",
+    "reviews": [
+      {
+        "rating": 4.9,
+        "comment": "Dr. Kapoor transformed my skin, very grateful for her expertise."
+      }
+    ],
+    "business_hours": {
+      "Monday-Friday": "10:00 AM - 4:00 PM",
+      "Saturday": "10:00 AM - 1:00 PM",
+      "Sunday": "Closed"
+    },
+    "BTP": [
+      "Advanced acne treatments with minimal side effects",
+      "Early skin cancer detection and care",
+      "Personalized cosmetic procedures for enhanced skin health"
+    ],
+    "specialist": "Dermatology",
+    "doctor_pic": "https://i.postimg.cc/zfpm5gRJ/Rectangle-15.png"
+  }
+]

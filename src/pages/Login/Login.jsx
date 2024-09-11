@@ -3,6 +3,7 @@ import signInImg from "../../assets/SignUp/Frame.png"
 import { AuthContext } from "../../providers/AuthProvider"
 import { Link, useLocation, useNavigate } from "react-router-dom"
 import Swal from "sweetalert2"
+import SocialLogin from "../../components/SocialLogin/SocialLogin"
 
 const Login = () => {
   const { signIn } = useContext(AuthContext)
@@ -87,6 +88,7 @@ const Login = () => {
                   <Link to={"/signUp"}>SIGN UP</Link>
                 </span>
               </h2>
+              <SocialLogin></SocialLogin>
             </div>
           </form>
         </div>
@@ -96,3 +98,19 @@ const Login = () => {
 }
 
 export default Login
+
+/**
+ *
+ *
+ */
+// import React from 'react';
+
+// const Login = () => {
+//   return (
+//     <div>
+
+//     </div>
+//   );
+// };
+
+// export default Login;

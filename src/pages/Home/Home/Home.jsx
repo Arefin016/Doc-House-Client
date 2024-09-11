@@ -1,4 +1,5 @@
 import Banner from "../Banner/Banner"
+import ExpertDoctor from "../ExpertDoctor/ExpertDoctor"
 import Location from "../Location/Location"
 import OurServices from "../OurServices/OurServices"
 import PatientsReviews from "../PatientsReviews/PatientsReviews"
@@ -10,6 +11,7 @@ const Home = () => {
       <OurServices></OurServices>
       <Location></Location>
       <PatientsReviews></PatientsReviews>
+      <ExpertDoctor></ExpertDoctor>
     </div>
   )
 }

@@ -18,10 +18,10 @@ const Banner = () => {
           />
         </div>
         <div className="lg:w-[65%]">
-          <h1 className="text-7xl font-semibold text-white">
+          <h1 className="text-7xl font-semibold text-white animate__animated animate__bounce">
             Your Best Medical <br /> Help Center
           </h1>
-          <p className="py-6 text-white lg:w-3/5">
+          <p className="py-6 text-white lg:w-3/5 animate__heartBeat">
             DocHouse connects users with healthcare professionals, offering{" "}
             convenient access to medical consultations and services from home.
           </p>

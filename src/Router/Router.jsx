@@ -9,6 +9,7 @@ import ContactUs from "../pages/ContactUs/ContactUs"
 import ErrorPage from "../pages/ErrorPage/ErrorPage"
 import SignUp from "../pages/SignUp/SignUp"
 import PrivateRoute from "./PrivateRoute"
+import DoctorDetails from "../pages/DoctorDetails/DoctorDetails"
 
 export const router = createBrowserRouter([
   {
@@ -47,6 +48,10 @@ export const router = createBrowserRouter([
       {
         path: "/signUp",
         element: <SignUp></SignUp>,
+      },
+      {
+        path: "/doctorDetailsPage/:id",
+        element: <DoctorDetails></DoctorDetails>,
       },
     ],
   },
